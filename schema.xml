@@ -1,0 +1,215 @@
+<faucris>
+	<people>
+		<!-- ID must be unique only within this document-->
+		<person id="">
+			<!-- Identify a person via Person ID and Organisation ID (mandatory for internal authors) 
+			You can get both of these IDs via the Public Web Research portal cris.fau.de
+			-->
+			<cris_person_id></cris_person_id>
+			<cris_org_id></cris_org_id>
+			<!--
+                The following details are optional for internal people (cris_person_id and cris_org_id set),
+                mandatory for external people (cris_person_id and cris_org_id not set)
+            -->				
+			<firstname></firstname>
+			<lastname></lastname>
+			<affiliation></affiliation>
+
+			<!-- The following details are optional for internal and external authors -->
+			<thirdpartyid orcid="" researcherid="" scopusid="" />
+			<fauid univiskey="" idmkey="" />
+		</person>
+	</people>
+	<publications>
+		<!--
+            attributes:
+            - peerreviewed: y/n (mandatory for type: journal article)
+			- fau_publication: y/n (mandatory, choose y if at least one author's affiliation is FAU on the publication)
+            - type must be chosen from this list (mandatory)
+                - journal article (optional subtypes: Editorial, Erratum, Medical case study, Letter, Original article, Report, Review article, Short survey, Note, Online publication, Other)
+                - editorial (optional subtypes: Book, Festschrift, Exhibition catalogue, Source edition, other)
+                - authored book (optional subtypes: Monography, Manual, Textbook, Volume of book series)
+				- translation (no subtypes)
+				- thesis (optional subtypes: Habilitation, Dissertation, Diploma thesis, Magister thesis, Degree thesis, Master thesis, Bachelor thesis)
+				- conference contribution (optional subtypes: Original work, Conference contribution, Abstract of a talk, Abstract of a poster)
+				- article in edited volumes (optional subtypes: Original article, Case study, Review article, Book chapter, Exhibition catalogue contribution, Festschrift, Manual, Essay, Online publication, Other)
+                - other (mandatory subtype: Recension/Book review, Dictionary entry, Newspaper article, Working paper, Online publication, Conference report, Other)
+		-->
+		<publication peerreview="" fau_publication="" type="" subtype="">
+
+			<!-- Subtype description is mandatory for publication type "Other / Other" -->            
+			<subtype_description></subtype_description>
+
+			<authors>
+				<!--
+                    - ID refers to person in people's list
+                    - sequence is mandatory for all entries
+                -->
+				<author sequence="" id="" />
+				<author sequence="">
+					<person id="">
+						<!-- Identify a person via Person ID and Organisation ID (mandatory for internal authors) 
+						You can get both of these IDs via the Public Web Research portal cris.fau.de
+						-->
+						<cris_person_id></cris_person_id>
+						<cris_org_id></cris_org_id>
+						<!--
+						The following details are optional for internal people (cris_person_id and cris_org_id set),
+						mandatory for external people (cris_person_id and cris_org_id not set)
+						-->				
+						<firstname></firstname>
+						<lastname></lastname>
+						<affiliation></affiliation>
+
+						<!-- The following details are optional for internal and external authors -->
+						<thirdpartyid orcid="" researcherid="" scopusid="" />
+						<fauid univiskey="" idmkey="" />
+					</person>
+				</author>
+			</authors>
+				<!--
+                attribute "content" sets editors as free string (NOT allowed for editorials)
+                for editorials each editor must be listed separately
+                    -> same rules apply as for authors!
+                if any editors are listed, this data will override the "content" attribute
+				-->
+			<editors content="">
+				<editor sequence="" id="" />
+				<editor sequence="">
+					<person id="">
+						<!-- Identify a person via Person ID and Organisation ID (mandatory for internal authors) 
+						You can get both of these IDs via the Public Web Research portal cris.fau.de
+						-->
+						<cris_person_id></cris_person_id>
+						<cris_org_id></cris_org_id>
+						<!--
+						The following details are optional for internal people (cris_person_id and cris_org_id set),
+						mandatory for external people (cris_person_id and cris_org_id not set)
+						-->				
+						<firstname></firstname>
+						<lastname></lastname>
+						<affiliation></affiliation>
+
+						<!-- The following details are optional for internal and external authors -->
+						<thirdpartyid orcid="" researcherid="" scopusid="" />
+						<fauid univiskey="" idmkey="" />
+					</person>
+				</editor>
+			</editors>
+
+			<!-- Title is mandatory -->
+			<title></title>
+
+			<!-- Publication year is mandatory, month and date are optional -->
+			<publication_date>
+				<!-- dd: 01-31 -->
+				<publication_day></publication_day>
+				<!-- mm: 01-12 -->
+				<publication_month></publication_month>
+				<!-- yyyy: 2012 -->
+				<publication_year></publication_year>
+			</publication_date>
+
+			<!-- Journal name and ISSN are mandatory for Journal articles -->
+			<!-- These journal attributes may be used for Journal articles only. Other types should use title_of_series or title_edited_volumes (see below) -->
+			<journal>
+				<name></name>
+				<issn></issn>
+				<eissn></eissn>
+			</journal>
+
+			<!-- Everything below is optional, some details are still necessary for correct citation -->
+			<language></language>
+			<abstract></abstract>
+			<keywords>
+				<keyword></keyword>
+			</keywords>
+			<issue></issue>
+			<volume></volume>
+			<pages_range></pages_range>
+			<doi></doi>
+			<url></url>
+			<title_edited_volumes></title_edited_volumes>
+			<title_of_series></title_of_series>
+			<series_editor></series_editor>
+
+			<!--optional for Types: Articles in Edited volumes, Authored Book, Translation, Thesis, Editorial, Conference contribution, other -->
+			<publisher>
+				<publisher_name></publisher_name>
+				<publisher_location></publisher_location>
+			</publisher>
+
+			<!--optional for Type: Authored Book, Editorial -->
+			<edition></edition>
+
+			<!--optional for Types: Articles in Edited volumes, Authored Book, Editorial -->
+			<isbn></isbn>
+
+			<open_access is_open_access="y/n">
+				<open_access_link></open_access_link>
+			</open_access>
+
+			<!--optional for Type: Translation -->
+			<translation_original>
+				<translation_type_of_original></translation_type_of_original>
+				<translation_title_of_original></translation_title_of_original>
+				<translation_authors_of_original></translation_authors_of_original>
+				<translation_language_of_original></translation_language_of_original>
+				<translation_year_of_original></translation_year_of_original>
+			</translation_original>
+
+			<!--optional for Type: Conference contribution -->
+			<conference_details>
+				<conference_name></conference_name>
+				<conference_start_date></conference_start_date>
+				<conference_end_date></conference_end_date>
+				<conference_location></conference_location>
+				<!-- Alpha-2 code of ISO 3166-1 (e.g. DE for Germany) -->
+				<conference_country></conference_country>
+				<conference_proceedings_title></conference_proceedings_title>
+			</conference_details>
+
+			<!-- Major Research Areas are optional but recommended. You can get the id from the Public Web URL. -->
+			<major_research_areas>
+				<major_research_area>
+					<name></name>
+					<!-- mandatory if major research area is used -->
+					<crisid></crisid>
+				</major_research_area>
+			</major_research_areas>
+
+			<!-- Focus Areas of Individual Faculties are optional but recommended. You can get the id from the Public Web URL -->
+			<focus_areas>
+				<focus_area>
+					<name></name>
+					<!-- mandatory if focus area is used -->
+					<crisid></crisid>
+				</focus_area>
+			</focus_areas>
+			
+			<!-- additional information (optional, but recommended) -->
+			<!-- 
+				Identifier in external systems, should be unique within source database.
+				- If not set, the recent date will be used in combination with "<import_source>" (see below).
+				- Value MUST NOT contain double colon '::' as it is used as separator.
+			-->
+			<external_id></external_id>
+			<!-- 
+				Possible values: "insert" (default) and "update".
+				Notes: 
+					- "insert" triggers automatic look-up for matching identical titles in same publication type. 
+					  If there's any duplicate, the import will skip this publication.
+					- "update" requires <external_id> and <import_source> attribute.
+					- Author relations cannot be updated in correct sequence due to technical limitations!
+			-->
+			<import_mode></import_mode>
+		</publication>
+	</publications>
+	<!-- 
+		optional: identifier for third party source 
+			- Field is used as prefix for "external_id" => concatenation results in a globally unique id 
+			  (double colon as separator).
+			- If not set, a UUID will be generated automatically.
+	-->
+	<import_source></import_source>
+</faucris>
