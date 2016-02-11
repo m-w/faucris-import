@@ -161,6 +161,7 @@
 			<!--optional for Type: Conference contribution -->
 			<conference_details>
 				<conference_name></conference_name>
+				<!-- dates are given in ISO format: YYYY-MM-DD -->
 				<conference_start_date></conference_start_date>
 				<conference_end_date></conference_end_date>
 				<conference_location></conference_location>
