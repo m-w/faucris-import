@@ -207,10 +207,9 @@
 		</publication>
 	</publications>
 	<!-- 
-		optional: identifier for third party source 
+		mandatory: identifier for third party source 
 			- Field is used as prefix for "external_id" => concatenation results in a globally unique id 
 			  (double colon as separator).
-			- If not set, a UUID will be generated automatically.
 	-->
 	<import_source></import_source>
 </faucris>
