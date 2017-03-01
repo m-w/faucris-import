@@ -35,7 +35,7 @@
 				- article in edited volumes (optional subtypes: Original article, Case study, Review article, Book chapter, Exhibition catalogue contribution, Festschrift, Manual, Essay, Online publication, Other)
                 - other (mandatory subtype: Recension/Book review, Dictionary entry, Newspaper article, Working paper, Online publication, Conference report, Other)
 		-->
-		<publication peerreview="" fau_publication="" type="" subtype="">
+		<publication peerreviewed="" fau_publication="" type="" subtype="">
 
 			<!-- Subtype description is mandatory for publication type "Other / Other" -->            
 			<subtype_description></subtype_description>

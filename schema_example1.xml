@@ -148,7 +148,7 @@
 				- article in edited volumes (optional subtypes: Original article, Case study, Review article, Book chapter, Edition, Exhibition catalogue contribution)
                 - other (mandatory subtype: Recension/Book review, Dictionary entry, Newspaper article, Working paper, Other)
 		-->
-		<publication peerreview="y" fau_publication="y" type="Journal article">
+		<publication peerreviewed="y" fau_publication="y" type="Journal article">
 
 			<authors>
 				<!--
