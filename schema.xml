@@ -128,6 +128,7 @@
 			<volume></volume>
 			<pages_range></pages_range>
 			<doi></doi>
+			<!-- URIs need to begin with http:// or https:// -->
 			<url></url>
 			<title_edited_volumes></title_edited_volumes>
 			<title_of_series></title_of_series>
@@ -188,7 +189,7 @@
 				</focus_area>
 			</focus_areas>
 			
-			<!-- additional information (optional, but recommended) -->
+			<!-- additional information (optional, but strongly recommended) -->
 			<!-- 
 				Identifier in external systems, should be unique within source database.
 				- If not set, the recent date will be used in combination with "<import_source>" (see below).
