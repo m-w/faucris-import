@@ -27,7 +27,7 @@
 			- fau_publication: y/n (mandatory, choose y if at least one author's affiliation is FAU on the publication)
             - type must be chosen from this list (mandatory)
                 - journal article (optional subtypes: Editorial, Erratum, Medical case study, Letter, Original article, Report, Review article, Short survey, Note, Online publication, Other)
-                - editorial (optional subtypes: Book, Festschrift, Exhibition catalogue, Source edition, other)
+                - edited volume (optional subtypes: Book, Festschrift, Exhibition catalogue, Source edition, other)
                 - authored book (optional subtypes: Monography, Manual, Textbook, Volume of book series)
 				- translation (no subtypes)
 				- thesis (optional subtypes: Habilitation, Dissertation, Diploma thesis, Magister thesis, Degree thesis, Master thesis, Bachelor thesis)
@@ -68,8 +68,8 @@
 				</author>
 			</authors>
 				<!--
-                attribute "content" sets editors as free string (NOT allowed for editorials)
-                for editorials each editor must be listed separately
+                attribute "content" sets editors as free string (NOT allowed for edited volumes)
+                for edited volumes each editor must be listed separately
                     -> same rules apply as for authors!
                 if any editors are listed, this data will override the "content" attribute
 				-->
@@ -134,17 +134,20 @@
 			<title_of_series></title_of_series>
 			<series_editor></series_editor>
 
-			<!--optional for Types: Articles in Edited volumes, Authored Book, Translation, Thesis, Editorial, Conference contribution, other -->
+			<!--optional for Types: Articles in Edited volumes, Authored Book, Translation, Thesis, Edited Volumes, Conference contribution, other -->
 			<publisher>
 				<publisher_name></publisher_name>
 				<publisher_location></publisher_location>
 			</publisher>
 
-			<!--optional for Type: Authored Book, Editorial -->
+			<!--optional for Type: Authored Book, Edited Volumes -->
 			<edition></edition>
 
-			<!--optional for Types: Articles in Edited volumes, Authored Book, Editorial -->
+			<!--optional for Types: Articles in Edited volumes, Authored Book, Edited Volumes -->
 			<isbn></isbn>
+
+			<!-- optional for types: Authored Book, Edited Volumes -->
+			<total_pages></total_pages>
 
 			<open_access is_open_access="y/n">
 				<open_access_link></open_access_link>
